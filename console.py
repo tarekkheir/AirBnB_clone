@@ -113,7 +113,7 @@ class HBNBCommand(cmd.Cmd):
         all_objs = storage.all()
         if len(arg) < 1:
             for obj_id in all_objs.keys():
-                print("[\"{}]".format(all_objs[obj_id]))
+                print("{}".format(all_objs[obj_id]))
         else:
             if arg not in HBNBCommand.classes:
                 print("** class doesn't exist **")
@@ -121,7 +121,7 @@ class HBNBCommand(cmd.Cmd):
                 for k, v in all_objs.items():
                     class_name = k.split(".")
                     if class_name[0] == arg:
-                        print("[\"{}]".format(all_objs[k]))
+                        print("{}".format(all_objs[k]))
 
     def do_update(self, arg):
         """
