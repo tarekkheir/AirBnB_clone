@@ -56,5 +56,12 @@ class TestBaseModel(unittest.TestCase):
         my_new_model = BaseModel(**my_model_json)
         self.assertFalse(self.base is my_new_model)
 
+    def tearDown(self):
+        """
+        To define instructions that will be executed after each test
+        """
+        del self.base
+
+
 if __name__ == '__main__':
     unittest.main()
