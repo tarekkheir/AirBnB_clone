@@ -149,5 +149,23 @@ class HBNBCommand(cmd.Cmd):
             except:
                 print("** no instance found **")
 
+    def default(self, line):
+        """
+        Method called on an input line when the command prefix
+        is not recognized
+        """
+        args = line.split(".")
+        all_objs = storage.all()
+        count = 0
+        if args[0] in HBNBCommand.classes:
+            if args[1] == "all()":
+                HBNBCommand.do_all(self, args[0])
+            if args[1] == "count()":
+                for k in all_objs.keys():
+                    key = k.split(".")
+                    if args[0] == key[0]:
+                        count += 1
+                print(count)
+
 if __name__ == '__main__':
     HBNBCommand().cmdloop()

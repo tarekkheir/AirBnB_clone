@@ -3,13 +3,7 @@
 
  Foundations - Higher-level programming -- AirBnB clone
 
-* By Guillaume, CTO at Holberton School*
-
-
-*For this project, look at these concepts:*
-
--   *[Python packages](https://intranet.hbtn.io/concepts/66)*
--   *[AirBnB clone](https://intranet.hbtn.io/concepts/74)*
+![](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210216%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210216T153511Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=6b414f9b88f90218fcde9a2179773cc610a63b970e27d420fe43a0a231113374)
 
 Background Context
 ------------------
@@ -32,7 +26,6 @@ Each task is linked and will help you to:
 
 ### What's a command interpreter?
 
-Do you remember the Shell? It's exactly the same but limited to a specific use-case. In our case, we want to be able to manage the objects of our project:
 
 -   Create a new object (ex: a new User or a new Place)
 -   Retrieve an object from a file, a database etc...
@@ -46,7 +39,6 @@ Resources
 **Read or watch**:
 
 -   [cmd module](https://intranet.hbtn.io/rltoken/Fx9HXIjmGzbmET4ylYg2Rw "cmd module")
--   **packages** concept page
 -   [uuid module](https://intranet.hbtn.io/rltoken/eaQ6aELbdqb0WmPddhD00g "uuid module")
 -   [datetime](https://intranet.hbtn.io/rltoken/_ySDcgtfrwLkTyQzYHTH0Q "datetime")
 -   [unittest module](https://intranet.hbtn.io/rltoken/QX7d4D__xhOJIGIWZBp39g "unittest module")
@@ -78,21 +70,18 @@ Requirements
 
 -   Allowed editors: `vi`, `vim`, `emacs`
 -   All your files will be interpreted/compiled on Ubuntu 14.04 LTS using `python3` (version 3.4.3)
--   All your files should end with a new line
 -   The first line of all your files should be exactly `#!/usr/bin/python3`
 -   A `README.md` file, at the root of the folder of the project, is mandatory
 -   Your code should use the `PEP 8` style (version 1.7 or more)
 -   All your files must be executable
--   The length of your files will be tested using `wc`
 -   All your modules should have a documentation (`python3 -c 'print(__import__("my_module").__doc__)'`)
 -   All your classes should have a documentation (`python3 -c 'print(__import__("my_module").MyClass.__doc__)'`)
 -   All your functions (inside and outside a class) should have a documentation (`python3 -c 'print(__import__("my_module").my_function.__doc__)'` and `python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'`)
--   A documentation is not a simple word, it's a real sentence explaining what's the purpose of the module, class or method (the length of it will be verified)
+
 
 ### Python Unit Tests
 
 -   Allowed editors: `vi`, `vim`, `emacs`
--   All your files should end with a new line
 -   All your test files should be inside a folder `tests`
 -   You have to use the [unittest module](https://intranet.hbtn.io/rltoken/QX7d4D__xhOJIGIWZBp39g "unittest module")
 -   All your test files should be python files (extension: `.py`)
