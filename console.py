@@ -111,9 +111,11 @@ class HBNBCommand(cmd.Cmd):
         or not on the class name.
         """
         all_objs = storage.all()
+        arr_objs = []
         if len(arg) < 1:
             for obj_id in all_objs.keys():
-                print("{}".format(all_objs[obj_id]))
+                arr_objs.append(all_objs[obj_id].__str__())
+            print(arr_objs)
         else:
             if arg not in HBNBCommand.classes:
                 print("** class doesn't exist **")
@@ -121,7 +123,8 @@ class HBNBCommand(cmd.Cmd):
                 for k, v in all_objs.items():
                     class_name = k.split(".")
                     if class_name[0] == arg:
-                        print("{}".format(all_objs[k]))
+                        arr_objs.append(all_objs[k].__str__())
+                print(arr_objs)
 
     def do_update(self, arg):
         """
@@ -157,15 +160,25 @@ class HBNBCommand(cmd.Cmd):
         args = line.split(".")
         all_objs = storage.all()
         count = 0
+        sp_arg = args[1].split('"')
+        args_cmd = sp_arg[0]
         if args[0] in HBNBCommand.classes:
             if args[1] == "all()":
                 HBNBCommand.do_all(self, args[0])
-            if args[1] == "count()":
+            elif args[1] == "count()":
                 for k in all_objs.keys():
                     key = k.split(".")
                     if args[0] == key[0]:
                         count += 1
                 print(count)
+            elif args_cmd == "show(":
+                arg_id = sp_arg[1]
+                arg = args[0] + " " + arg_id
+                HBNBCommand.do_show(self, arg)
+            elif args_cmd == "destroy(":
+                arg_id = sp_arg[1]
+                arg = args[0] + " " + arg_id
+                HBNBCommand.do_destroy(self, arg)
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
