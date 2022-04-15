@@ -1,13 +1,10 @@
 AirBnB clone - The console
 ================================
 
-Background Context
+Welcome to the AirBnB clone project!
 ------------------
 
-### Welcome to the AirBnB clone project!
-
-
-#### First step: Write a command interpreter to manage your AirBnB objects.
+` First step: Write a command interpreter to manage AirBnB objects.`
 
 ### What's a command interpreter?
 
