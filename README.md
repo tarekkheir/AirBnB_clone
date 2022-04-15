@@ -84,4 +84,4 @@ $
 
 ***Tarek KHEIR* | Aurélie CEDIA**
 
-<a href="https://github.com/tarekkheir/AirBNB_clonev2" align="right">Next step (AirBNB clone V2)</a>
+<a href="https://github.com/tarekkheir/AirBNB_clone_v2" align="right">Next step (AirBNB clone V2)</a>
