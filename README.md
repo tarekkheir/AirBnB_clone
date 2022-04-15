@@ -4,6 +4,9 @@ AirBnB clone - The console
 Welcome to the AirBnB clone project!
 ------------------
 
+![image](https://user-images.githubusercontent.com/61886501/163566912-4fc76817-3e9d-4a8f-9aae-a8ec9f9f26f7.png)
+
+
 ` First step: Write a command interpreter to manage AirBnB objects.`
 
 ### What's a command interpreter?
