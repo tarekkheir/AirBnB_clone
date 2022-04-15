@@ -79,3 +79,9 @@ $
 
 `\
 `
+
+## AUTHORS
+
+***Tarek KHEIR* | Aurélie CEDIA**
+
+<a href="https://github.com/tarekkheir/AirBNB_clonev2" align="right">Next step (AirBNB clone V2)</a>
